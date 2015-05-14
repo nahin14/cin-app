@@ -29,6 +29,17 @@ class CreateInsurersTable extends Migration {
             $table->string('email', 30)->unique();
             $table->timestamps();
 		});
+
+        DB::table('insurers')->insert(array(
+            array('slug' => 'Churchill Insurance',
+                'addressLine1' => 'The Wharf', 'addressLine2' => 'Neville Street',
+                'city' => 'Leeds', 'Postcode' => 'LS1 4AZ',
+                'Telephone' => '08456033599', 'email' => 'motorclaims@churchill.com'),
+            array('slug' => 'Aviva',
+                'addressLine1' => 'Aviva-Claims', 'addressLine2' => 'PO Box 520',
+                'city' => 'Norwich', 'Postcode' => 'NR1 3WG',
+                'Telephone' => '08000151142', 'email' => 'helpdesk@aviva.co.uk')
+        ));
 	}
 
 	/**

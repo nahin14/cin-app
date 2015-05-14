@@ -32,6 +32,13 @@ class CreateUsersTable extends Migration {
         Schema::table('users', function($table) {
             $table->foreign('roleID')->references('id')->on('roles')->onDelete('cascade');
         });
+
+        DB::table('users')->insert(array(
+            array('name' => 'Nahin Miah', 'slug' => 'nahin14',
+                'email' => 'nahinmiah94@gmail.com', 'password' => Hash::make('password'), 'roleID' => '1'),
+            array('name' => 'Flavio Gomes', 'slug' => 'flavio94',
+                'email' => 'gomesf94@gmail.com', 'password' => Hash::make('password'), 'roleID' => '2'),
+        ));
 	}
 
 	/**

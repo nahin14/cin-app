@@ -23,6 +23,11 @@ class CreateClientTypesTable extends Migration {
             $table->string('clientTypeName');
             $table->timestamps();
 		});
+
+        DB::table('client_types')->insert(array(
+            array('clientTypeName' => 'Claimant'),
+            array('clientTypeName' => 'Defendant')
+        ));
 	}
 
 	/**

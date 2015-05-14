@@ -23,6 +23,14 @@ class CreateVehicleTypesTable extends Migration {
             $table->string('vehicleTypeName');
             $table->timestamps();
 		});
+
+        DB::table('vehicle_types')->insert(array(
+            array('vehicleTypeName' => 'Car'),
+            array('vehicleTypeName' => 'Van'),
+            array('vehicleTypeName' => 'Truck'),
+            array('vehicleTypeName' => 'Motorcycle'),
+            array('vehicleTypeName' => 'Bicycle'),
+        ));
 	}
 
 	/**

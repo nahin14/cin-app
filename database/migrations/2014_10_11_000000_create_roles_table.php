@@ -23,6 +23,11 @@ class CreateRolesTable extends Migration {
             $table->string('slug');
 			$table->timestamps();
 		});
+
+        DB::table('roles')->insert(array(
+            array('slug' => 'admin'),
+            array('slug' => 'staff')
+        ));
 	}
 
 	/**

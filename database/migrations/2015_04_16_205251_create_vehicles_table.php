@@ -32,6 +32,10 @@ class CreateVehiclesTable extends Migration {
             $table->foreign('vehicleTypeID')->references('id')->on('vehicle_types')->onDelete('cascade');
 
         });
+
+        DB::table('vehicles')->insert(array(
+            array('slug'=> 'BD32ADB', 'clientID' => '1', 'vehicleTypeID' => '1')
+        ));
 	}
 
 	/**
