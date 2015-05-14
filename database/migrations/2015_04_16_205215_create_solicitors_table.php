@@ -33,24 +33,6 @@ class CreateSolicitorsTable extends Migration {
             $table->timestamps();
         });
 
-        DB::table('solicitors')->insert(array(
-            array('slug' => 'Jessica Pearson', 'firmName' => 'Pearson Specter Litt',
-                'addressLine1' => '601', 'addressLine2' => 'Lexington New York',
-                'city' => 'New York', 'Postcode' => 'NY1 2CT',
-                'Telephone' => '08003333555', 'Mobile' => '', 'email' => 'pearsonj@psl.com'),
-            array('slug' => 'Harvey Specter', 'firmName' => 'Pearson Specter Litt',
-                'addressLine1' => '601', 'addressLine2' => 'Lexington New York',
-                'city' => 'New York', 'Postcode' => 'NY1 2CT',
-                'Telephone' => '08003333555', 'Mobile' => '', 'email' => 'specterh@psl.com'),
-            array('slug' => 'Louis Litt', 'firmName' => 'Pearson Specter Litt',
-                'addressLine1' => '601', 'addressLine2' => 'Lexington New York',
-                'city' => 'New York', 'Postcode' => 'NY1 2CT',
-                'Telephone' => '08003333555', 'Mobile' => '', 'email' => 'littl@psl.com'),
-            array('slug' => 'Mike Ross', 'firmName' => 'Pearson Specter Litt',
-                'addressLine1' => '601', 'addressLine2' => 'Lexington New York',
-                'city' => 'New York', 'Postcode' => 'NY1 2CT',
-                'Telephone' => '08003333555', 'Mobile' => '', 'email' => 'rossm@psl.com')
-        ));
 	}
 
 	/**

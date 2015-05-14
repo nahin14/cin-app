@@ -24,11 +24,6 @@ class CreateInsuranceTypesTable extends Migration {
 			$table->timestamps();
 		});
 
-        DB::table('insurance_types')->insert(array(
-            array('insuranceTypeName' => 'Third Party'),
-            array('insuranceTypeName' => 'Fully Comprehensive'),
-            array('insuranceTypeName' => 'None')
-        ));
 	}
 
 	/**

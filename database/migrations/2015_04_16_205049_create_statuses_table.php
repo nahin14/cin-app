@@ -24,12 +24,6 @@ class CreateStatusesTable extends Migration {
             $table->timestamps();
 		});
 
-        DB::table('statuses')->insert(array(
-            array('statusName' => 'New'),
-            array('statusName' => 'Pending'),
-            array('statusName' => 'Completed'),
-            array('statusName' => 'Cancelled'),
-        ));
 	}
 
 	/**

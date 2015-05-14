@@ -33,9 +33,6 @@ class CreateVehiclesTable extends Migration {
 
         });
 
-        DB::table('vehicles')->insert(array(
-            array('slug'=> 'BD32ADB', 'clientID' => '1', 'vehicleTypeID' => '1')
-        ));
 	}
 
 	/**

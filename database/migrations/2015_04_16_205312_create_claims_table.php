@@ -43,11 +43,6 @@ class CreateClaimsTable extends Migration {
             $table->foreign('solicitorID')->references('id')->on('solicitors');
         });
 
-        DB::table('claims')->insert(array(
-            array('slug' => 'Claim 1', 'claimTypeID' => '1', 'claimDate' => '2015-01-01', 'statusID' => '3',
-                'claimInfo' => 'Client would  like to claim for...', 'notes' => '...', 'clientID' => '1',
-                'clientTypeID' => '1', 'userID' => '1', 'solicitorID' => '4')
-        ));
 	}
 
 	/**

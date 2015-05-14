@@ -24,14 +24,6 @@ class CreateClaimTypesTable extends Migration {
             $table->timestamps();
 		});
 
-        DB::table('claim_types')->insert(array(
-            array('claimTypeName' => 'Driver'),
-            array('claimTypeName' => 'Passenger'),
-            array('claimTypeName' => 'Cyclist'),
-            array('claimTypeName' => 'Pedestrian'),
-            array('claimTypeName' => 'Bus Passenger'),
-            array('claimTypeName' => 'Taxi Passenger')
-        ));
 	}
 
 	/**
